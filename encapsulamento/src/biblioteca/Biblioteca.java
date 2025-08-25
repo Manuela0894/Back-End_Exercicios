@@ -30,6 +30,7 @@ public class Biblioteca {
 			return numPaginas;
 		 }
 		 public void setNumPaginas() {
+			 //condicionais de validação para quando a qnt de paginas é menor que 5
 			 int num;
 		        do {
 		            System.out.println("Informe o número de páginas:");
@@ -43,6 +44,7 @@ public class Biblioteca {
 		    }
 		 
 		 	public void encomendarLivro(){
+				//Questionamento de encomenda
 		 		String respostaEncomenda;
 		 		System.out.println("Confirma sua escolha de encomenda? S/N");
 		 		sc.nextLine();
