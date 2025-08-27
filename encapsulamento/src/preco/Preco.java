@@ -24,7 +24,7 @@ public class Preco {
 		 public void setDesconto() {
 			 double porcentagemOff;
 			 boolean valido = false;
-			 
+			 //loop de validaçao da entrada
 			 while(!valido) {
 			 System.out.println("Digite a porcentagem de desconto:");
 			 
@@ -35,6 +35,7 @@ public class Preco {
 				 System.out.println("Percentual de desconto inválido!");
 			 }
 			 else {
+				 //calculo do desconto
 			 desconto = (porcentagemOff/100.0) * preco;
 			 double valorFinal = (preco - desconto);
 			 

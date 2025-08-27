@@ -15,6 +15,7 @@ public class Pessoa {
 		return age;
 	}
 	public void setAge(int age) {
+		//condicional para validação da idade
 			if(age <= 0) {
 				System.out.println("Idade inválida!");
 			}else {
@@ -24,7 +25,8 @@ public class Pessoa {
 	public int getAnoNascimento() {
 		return anoNascimento;
 	}
-	
+
+	//print de acontecimentos do mundo tech de cada década
 	public  String getMensagemHistorica() {
 		int ano = getAnoNascimento();
 		if(ano >= 1970 && ano <= 1979) return "A revolução do microprocessador começa!";
